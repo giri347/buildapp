@@ -34,7 +34,7 @@ steps:
     organization: 'giri347'
     scannerMode: 'MSBuild'
     projectKey: 'giri347_buildapp'
-    projectName: 'giri347'
+    projectName: 'buildapp'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
