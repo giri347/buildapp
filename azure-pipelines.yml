@@ -30,7 +30,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.csproj'
+  solution: '$(Build.SourcesDirectory)/${{parameters.select}}/**/*.csproj'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
