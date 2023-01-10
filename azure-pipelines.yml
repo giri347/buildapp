@@ -35,8 +35,8 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- checkout: git://sample-project/${{parameters.select}}
-
+#- checkout: git://sample-project/${{parameters.select}}
+ - checkout: webappdeploy-AzureDevops
 
 - task: NuGetToolInstaller@1
 
