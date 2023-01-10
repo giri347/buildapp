@@ -7,16 +7,16 @@ resources:
  repositories:
    - repository: buildapp
      type: github
-     endpoint: giri347 (1)
+     endpoint: giri347 
      name: giri347/buildapp
    - repository: webappdeploy-AzureDevops
      type: github
-     endpoint: giri347 (1)
+     endpoint: giri347 
      name: giri347/webappdeploy-AzureDevops
 
 
 trigger:
-- none
+- main
 parameters:
   - name: select
     displayName: select_projectbuildrepo
@@ -35,6 +35,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- checkout: git://sample-project/${{parameters.select}}
 
 
 - task: NuGetToolInstaller@1
