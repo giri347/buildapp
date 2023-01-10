@@ -36,7 +36,7 @@ variables:
 
 steps:
 #- checkout: git://sample-project/${{parameters.select}}
- - checkout: webappdeploy-AzureDevops
+- checkout: webappdeploy-AzureDevops
 
 - task: NuGetToolInstaller@1
 
